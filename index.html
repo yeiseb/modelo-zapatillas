@@ -4,23 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sandez - Distribuidora de Calzado</title>
-        <link rel="icon" href="img/logo.jpeg">
+    <link rel="icon" href="img/logo1.png">
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <nav class="navbar">
+     <nav class="navbar">
         <div class="nav-container">
             <div class="logo-container">
-                
-                <a href="#inicio" class="logo-text"><img src="" alt="">Sandez</a>
+                <a href="index.html" class="logo-link">
+                    <img src="img/logo1.png" alt="Sandez Logo" class="logo-img">
+                </a>
             </div>
-            <ul class="nav-menu">
+            <ul class="nav-menu" id="nav-menu">
                 <li class="nav-item">
                     <a href="#inicio" class="nav-link">Inicio</a>
                 </li>
                 <li class="nav-item">
                     <a href="#catalogo" class="nav-link">Catálogo</a>
-                    <div class="dropdown">
+                    <div class="dropdown" id="dropdown">
                         <a href="#" class="dropdown-item" onclick="filterProducts('deportivo')">Deportivo</a>
                         <a href="#" class="dropdown-item" onclick="filterProducts('casual')">Casual</a>
                         <a href="#" class="dropdown-item" onclick="filterProducts('hombre')">Hombre</a>
@@ -36,21 +39,38 @@
                 <li class="nav-item">
                     <a href="#contacto" class="nav-link">Contacto</a>
                 </li>
+                <li class="nav-item">
+                    <a href="nosotros.html" class="nav-link">Nosotros</a>
+                </li>
             </ul>
-            <div class="mobile-menu-btn" onclick="toggleMobileMenu()">☰</div>
+            <button class="mobile-menu-btn" id="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <span class="menu-line"></span>
+                <span class="menu-line"></span>
+                <span class="menu-line"></span>
+            </button>
         </div>
     </nav>
 
     <section id="inicio" class="hero">
+        <div class="hero-overlay"></div>
         <div class="hero-content">
-            <h1>Bienvenido a Sandez</h1>
-            <p>Distribuidora de calzado con las mejores marcas y modelos para cada ocasión. Calidad, estilo y comodidad en un solo lugar.</p>
+            <div class="logo-wrapper">
+                <img src="img/logo.png" alt="Distribuidora Sandez" class="hero-logo">
+            </div>
+            <h1>Distribuidora Sandez</h1>
+            <p class="hero-description">
+                <strong>Distribuidora de calzado</strong> con las mejores marcas y modelos para cada ocasión.<br>
+                Calidad, estilo y comodidad en un solo lugar.
+            </p>
             <a href="#catalogo" class="cta-button">Explorar Catálogo</a>
         </div>
     </section>
 
     <section id="catalogo" class="section">
-        <h2 class="section-title">Nuestro Catálogo</h2>
+        <div class="section-header">
+            <h2 class="section-title">Nuestro Catálogo</h2>
+            <p class="section-subtitle">Descubre nuestra amplia selección de calzado</p>
+        </div>
         <div class="search-container">
             <input type="text" class="search-input" id="search-input" placeholder="Buscar zapatillas...">
             <span class="search-icon">🔍</span>
@@ -61,10 +81,12 @@
     </section>
 
     <section id="ubicacion" class="section location-section">
-        <h2 class="section-title" style="color: white;">Nuestra Ubicación</h2>
-        <p style="font-size: 1.2rem; margin-bottom: 2rem;">Visítanos en nuestras tiendas físicas</p>
-        <div style="background: rgba(255,255,255,0.1); padding: 2rem; border-radius: 20px; margin: 2rem auto; max-width: 600px;">
-            <h3 style="margin-bottom: 1rem;">📍 Tienda Principal</h3>
+        <div class="section-header">
+            <h2 class="section-title">Nuestra Ubicación</h2>
+            <p class="section-subtitle">Visítanos en nuestras tiendas físicas</p>
+        </div>
+        <div class="location-card">
+            <h3>📍 Tienda Principal</h3>
             <p>Calle Principal #123, Centro Comercial Plaza Mayor</p>
             <p>📞 Teléfono: +57 317 419 6677</p>
             <p>🕒 Horarios: Lunes a Sábado 9:00 AM - 8:00 PM</p>
@@ -73,7 +95,10 @@
     </section>
 
     <section id="contacto" class="section contact-section">
-        <h2 class="section-title">Contáctanos</h2>
+        <div class="section-header">
+            <h2 class="section-title">Contáctanos</h2>
+            <p class="section-subtitle">Estamos aquí para ayudarte</p>
+        </div>
         <div class="contact-form">
             <div class="form-group">
                 <input type="text" placeholder="Tu nombre" required>
@@ -91,6 +116,43 @@
         </div>
     </section>
 
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <a href="index.html"><img src="img/logo1.png" alt="Sandez Logo" class="footer-logo-img"></a>
+                <p>Distribuidora de calzado con las mejores marcas y modelos</p>
+            </div>
+            <div class="footer-links">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#catalogo">Catálogo</a></li>
+                    <li><a href="#ubicacion">Ubicación</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contacto</h3>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> Calle Principal #123, Bogotá</li>
+                    <li><i class="fas fa-phone"></i> +57 317 419 6677</li>
+                    <li><i class="fas fa-envelope"></i> info@sandez.com</li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Síguenos</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Distribuidora Sandez. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
     <div class="cart-section">
         <button class="cart-button" onclick="toggleCart()">
             🛒
@@ -100,19 +162,21 @@
 
     <div class="cart-modal" id="cart-modal">
         <div class="cart-content">
-            <h3 style="margin-bottom: 1rem;">Productos Seleccionados</h3>
+            <div class="modal-header">
+                <h3>Tu Carrito</h3>
+                <button class="close-modal" onclick="toggleCart()">×</button>
+            </div>
             <div id="cart-items"></div>
             <button class="whatsapp-button" onclick="sendWhatsAppMessage()">
                 📱 Consultar por WhatsApp
             </button>
-            <button style="margin-top: 1rem; background: #ccc; color: #333;" onclick="toggleCart()">Cerrar</button>
         </div>
     </div>
 
     <!-- Modal de detalles del producto -->
     <div class="product-modal" id="product-modal">
         <div class="product-modal-content">
-            <div class="product-modal-header">
+            <div class="modal-header">
                 <h3>Detalles del Producto</h3>
                 <button class="close-modal" onclick="closeProductModal()">×</button>
             </div>
@@ -122,6 +186,6 @@
         </div>
     </div>
 
-   <script src="js/script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
