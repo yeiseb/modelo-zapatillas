@@ -139,7 +139,7 @@ const products = [
         id: 10, 
         name: "Ref: 828-24-29-120", 
         price: "$150.000", 
-        category: ["niño", "casuel"],
+        category: ["niño", "casual"],
         description: "Las clásicas Converse Chuck Taylor All Star son un ícono de la moda casual. Ideales para combinar con cualquier estilo.",
         features: [
             "Diseño clásico atemporal",
@@ -150,6 +150,277 @@ const products = [
         sizes: ["36", "37", "38", "39", "40", "41", "42"],
         image: "img/10.jpeg"
     },
+        { 
+        id: 11, 
+        name: "Ref: 39-44", 
+        price: "$150.000", 
+        category: ["deportivo", "hombre"],
+        description: "Las clásicas Converse Chuck Taylor All Star son un ícono de la moda casual. Ideales para combinar con cualquier estilo.",
+        features: [
+            "Diseño clásico atemporal",
+            "Suela de goma resistente",
+            "Capellada de lona duradera",
+            "Disponible en múltiples colores"
+        ],
+        sizes: ["36", "37", "38", "39", "40", "41", "42"],
+        image: "img/11.jpeg"
+    },
+        { 
+        id: 12, 
+        name: "Ref: 173-36-40-330", 
+        price: "$150.000", 
+        category: ["casual", "hombre"],
+        description: "Las clásicas Converse Chuck Taylor All Star son un ícono de la moda casual. Ideales para combinar con cualquier estilo.",
+        features: [
+            "Diseño clásico atemporal",
+            "Suela de goma resistente",
+            "Capellada de lona duradera",
+            "Disponible en múltiples colores"
+        ],
+        sizes: ["36", "37", "38", "39", "40", "41", "42"],
+        image: "img/12.jpeg"
+    },
+        { 
+        id: 13, 
+        name: "Ref: 101-30-35-90", 
+        price: "$150.000", 
+        category: ["casual", "mujer"],
+        description: "Las clásicas Converse Chuck Taylor All Star son un ícono de la moda casual. Ideales para combinar con cualquier estilo.",
+        features: [
+            "Diseño clásico atemporal",
+            "Suela de goma resistente",
+            "Capellada de lona duradera",
+            "Disponible en múltiples colores"
+        ],
+        sizes: ["36", "37", "38", "39", "40", "41", "42"],
+        image: "img/13.jpeg"
+    },
+        { 
+        id: 14, 
+        name: "Ref: 113-36-41", 
+        price: "$150.000", 
+        category: ["casual", "niño"],
+        description: "Las clásicas Converse Chuck Taylor All Star son un ícono de la moda casual. Ideales para combinar con cualquier estilo.",
+        features: [
+            "Diseño clásico atemporal",
+            "Suela de goma resistente",
+            "Capellada de lona duradera",
+            "Disponible en múltiples colores"
+        ],
+        sizes: ["36", "37", "38", "39", "40", "41", "42"],
+        image: "img/14.jpeg"
+    },
+        { 
+        id: 15, 
+        name: "Ref: 113-36-41-348", 
+        price: "$150.000", 
+        category: ["casual", "mujer"],
+        description: "Las clásicas Converse Chuck Taylor All Star son un ícono de la moda casual. Ideales para combinar con cualquier estilo.",
+        features: [
+            "Diseño clásico atemporal",
+            "Suela de goma resistente",
+            "Capellada de lona duradera",
+            "Disponible en múltiples colores"
+        ],
+        sizes: ["36", "37", "38", "39", "40", "41", "42"],
+        image: "img/15.jpeg"
+    },
+        { 
+        id: 16, 
+        name: "Ref: KNOX-37-42", 
+        price: "$150.000", 
+        category: ["casual", "hombre"],
+        description: "Las clásicas Converse Chuck Taylor All Star son un ícono de la moda casual. Ideales para combinar con cualquier estilo.",
+        features: [
+            "Diseño clásico atemporal",
+            "Suela de goma resistente",
+            "Capellada de lona duradera",
+            "Disponible en múltiples colores"
+        ],
+        sizes: ["36", "37", "38", "39", "40", "41", "42"],
+        image: "img/16.jpeg"
+    },
+         { 
+        id: 17, 
+        name: "Ref: 148w-35-40-156", 
+        price: "$150.000", 
+        category: ["casual", "mujer"],
+        description: "Las clásicas Converse Chuck Taylor All Star son un ícono de la moda casual. Ideales para combinar con cualquier estilo.",
+        features: [
+            "Diseño clásico atemporal",
+            "Suela de goma resistente",
+            "Capellada de lona duradera",
+            "Disponible en múltiples colores"
+        ],
+        sizes: ["36", "37", "38", "39", "40", "41", "42"],
+        image: "img/17.jpeg"
+    },
+        { 
+        id: 18, 
+        name: "Ref: MARA-36-41-252", 
+        price: "$150.000", 
+        category: ["casual", "mujer"],
+        description: "Las clásicas Converse Chuck Taylor All Star son un ícono de la moda casual. Ideales para combinar con cualquier estilo.",
+        features: [
+            "Diseño clásico atemporal",
+            "Suela de goma resistente",
+            "Capellada de lona duradera",
+            "Disponible en múltiples colores"
+        ],
+        sizes: ["36", "37", "38", "39", "40", "41", "42"],
+        image: "img/18.jpeg"
+    },
+      { 
+        id: 19, 
+        name: "Ref: 220-39-44", 
+        price: "$150.000", 
+        category: ["casual", "hombre"],
+        description: "Las clásicas Converse Chuck Taylor All Star son un ícono de la moda casual. Ideales para combinar con cualquier estilo.",
+        features: [
+            "Diseño clásico atemporal",
+            "Suela de goma resistente",
+            "Capellada de lona duradera",
+            "Disponible en múltiples colores"
+        ],
+        sizes: ["36", "37", "38", "39", "40", "41", "42"],
+        image: "img/19.jpeg"
+    },
+      { 
+        id: 20, 
+        name: "Ref: 2051-35-40", 
+        price: "$150.000", 
+        category: ["casual", "niño"],
+        description: "Las clásicas Converse Chuck Taylor All Star son un ícono de la moda casual. Ideales para combinar con cualquier estilo.",
+        features: [
+            "Diseño clásico atemporal",
+            "Suela de goma resistente",
+            "Capellada de lona duradera",
+            "Disponible en múltiples colores"
+        ],
+        sizes: ["36", "37", "38", "39", "40", "41", "42"],
+        image: "img/20.jpeg"
+    },
+      { 
+        id: 21, 
+        name: "Ref: 2037-35-40", 
+        price: "$150.000", 
+        category: ["casual", "mujer"],
+        description: "Las clásicas Converse Chuck Taylor All Star son un ícono de la moda casual. Ideales para combinar con cualquier estilo.",
+        features: [
+            "Diseño clásico atemporal",
+            "Suela de goma resistente",
+            "Capellada de lona duradera",
+            "Disponible en múltiples colores"
+        ],
+        sizes: ["36", "37", "38", "39", "40", "41", "42"],
+        image: "img/21.jpeg"
+    },
+      { 
+        id: 22, 
+        name: "Ref: 5P-110D-38-42-384", 
+        price: "$150.000", 
+        category: ["casual", "mujer"],
+        description: "Las clásicas Converse Chuck Taylor All Star son un ícono de la moda casual. Ideales para combinar con cualquier estilo.",
+        features: [
+            "Diseño clásico atemporal",
+            "Suela de goma resistente",
+            "Capellada de lona duradera",
+            "Disponible en múltiples colores"
+        ],
+        sizes: ["36", "37", "38", "39", "40", "41", "42"],
+        image: "img/22.jpeg"
+    },
+      { 
+        id: 23, 
+        name: "Ref: 5P-446N-18-23-168", 
+        price: "$150.000", 
+        category: ["casual", "niño"],
+        description: "Las clásicas Converse Chuck Taylor All Star son un ícono de la moda casual. Ideales para combinar con cualquier estilo.",
+        features: [
+            "Diseño clásico atemporal",
+            "Suela de goma resistente",
+            "Capellada de lona duradera",
+            "Disponible en múltiples colores"
+        ],
+        sizes: ["36", "37", "38", "39", "40", "41", "42"],
+        image: "img/23.jpeg"
+    },
+     { 
+        id: 24, 
+        name: "Ref: 5P-171D-38-42-276", 
+        price: "$150.000", 
+        category: ["casual", "mujer"],
+        description: "Las clásicas Converse Chuck Taylor All Star son un ícono de la moda casual. Ideales para combinar con cualquier estilo.",
+        features: [
+            "Diseño clásico atemporal",
+            "Suela de goma resistente",
+            "Capellada de lona duradera",
+            "Disponible en múltiples colores"
+        ],
+        sizes: ["36", "37", "38", "39", "40", "41", "42"],
+        image: "img/24.jpeg"
+    },
+     { 
+        id: 25, 
+        name: "Ref: 18-23", 
+        price: "$150.000", 
+        category: ["casual", "hombre, mujer"],
+        description: "Las clásicas Converse Chuck Taylor All Star son un ícono de la moda casual. Ideales para combinar con cualquier estilo.",
+        features: [
+            "Diseño clásico atemporal",
+            "Suela de goma resistente",
+            "Capellada de lona duradera",
+            "Disponible en múltiples colores"
+        ],
+        sizes: ["36", "37", "38", "39", "40", "41", "42"],
+        image: "img/25.jpeg"
+    },
+     { 
+        id: 26, 
+        name: "Ref: 5P-87D-37-41-264", 
+        price: "$150.000", 
+        category: ["casual", "mujer"],
+        description: "Las clásicas Converse Chuck Taylor All Star son un ícono de la moda casual. Ideales para combinar con cualquier estilo.",
+        features: [
+            "Diseño clásico atemporal",
+            "Suela de goma resistente",
+            "Capellada de lona duradera",
+            "Disponible en múltiples colores"
+        ],
+        sizes: ["36", "37", "38", "39", "40", "41", "42"],
+        image: "img/26.jpeg"
+    },
+     { 
+        id: 27, 
+        name: "Ref: 5P-184D-37-41-336", 
+        price: "$150.000", 
+        category: ["casual", "mujer"],
+        description: "Las clásicas Converse Chuck Taylor All Star son un ícono de la moda casual. Ideales para combinar con cualquier estilo.",
+        features: [
+            "Diseño clásico atemporal",
+            "Suela de goma resistente",
+            "Capellada de lona duradera",
+            "Disponible en múltiples colores"
+        ],
+        sizes: ["36", "37", "38", "39", "40", "41", "42"],
+        image: "img/27.jpeg"
+    },
+     { 
+        id: 28, 
+        name: "Ref: 5P-131N-18-23-168", 
+        price: "$150.000", 
+        category: ["casual", "niño"],
+        description: "Las clásicas Converse Chuck Taylor All Star son un ícono de la moda casual. Ideales para combinar con cualquier estilo.",
+        features: [
+            "Diseño clásico atemporal",
+            "Suela de goma resistente",
+            "Capellada de lona duradera",
+            "Disponible en múltiples colores"
+        ],
+        sizes: ["36", "37", "38", "39", "40", "41", "42"],
+        image: "img/28.jpeg"
+    },
+    
 ];
 
 let cart = [];
