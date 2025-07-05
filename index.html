@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-     <nav class="navbar">
+    <nav class="navbar">
         <div class="nav-container">
             <div class="logo-container">
                 <a href="index.html" class="logo-link">
@@ -22,15 +22,15 @@
                     <a href="#inicio" class="nav-link">Inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#catalogo" class="nav-link">Catálogo</a>
+                    <a href="catalogo.html" class="nav-link">Catálogo</a>
                     <div class="dropdown" id="dropdown">
-                        <a href="#" class="dropdown-item" onclick="filterProducts('deportivo')">Deportivo</a>
-                        <a href="#" class="dropdown-item" onclick="filterProducts('casual')">Casual</a>
-                        <a href="#" class="dropdown-item" onclick="filterProducts('hombre')">Hombre</a>
-                        <a href="#" class="dropdown-item" onclick="filterProducts('mujer')">Mujer</a>
-                        <a href="#" class="dropdown-item" onclick="filterProducts('running')">Running</a>
-                        <a href="#" class="dropdown-item" onclick="filterProducts('urbano')">Urbano</a>
-                        <a href="#" class="dropdown-item" onclick="filterProducts('todos')">Ver Todos</a>
+                        <a href="catalogo.html?filter=deportivo" class="dropdown-item">Deportivo</a>
+                        <a href="catalogo.html?filter=casual" class="dropdown-item">Casual</a>
+                        <a href="catalogo.html?filter=hombre" class="dropdown-item">Hombre</a>
+                        <a href="catalogo.html?filter=mujer" class="dropdown-item">Mujer</a>
+                        <a href="catalogo.html?filter=running" class="dropdown-item">Running</a>
+                        <a href="catalogo.html?filter=urbano" class="dropdown-item">Urbano</a>
+                        <a href="catalogo.html" class="dropdown-item">Ver Todos</a>
                     </div>
                 </li>
                 <li class="nav-item">
@@ -62,21 +62,36 @@
                 <strong>Distribuidora de calzado</strong> con las mejores marcas y modelos para cada ocasión.<br>
                 Calidad, estilo y comodidad en un solo lugar.
             </p>
-            <a href="#catalogo" class="cta-button">Explorar Catálogo</a>
+            <div class="hero-actions">
+                <a href="catalogo.html" class="cta-button">Explorar Catálogo</a>
+                <a href="#contacto" class="cta-button secondary">Contáctanos</a>
+            </div>
         </div>
     </section>
 
-    <section id="catalogo" class="section">
-        <div class="section-header">
-            <h2 class="section-title">Nuestro Catálogo</h2>
-            <p class="section-subtitle">Descubre nuestra amplia selección de calzado</p>
-        </div>
-        <div class="search-container">
-            <input type="text" class="search-input" id="search-input" placeholder="Buscar zapatillas...">
-            <span class="search-icon">🔍</span>
-        </div>
-        <div class="products-grid" id="products-grid">
-            <!-- Los productos se generarán dinámicamente -->
+    <section class="features-section">
+        <div class="features-container">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-shipping-fast"></i>
+                </div>
+                <h3>Envíos Rápidos</h3>
+                <p>Entregamos a todo el país en 24-48 horas hábiles</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-undo-alt"></i>
+                </div>
+                <h3>Devoluciones Fáciles</h3>
+                <p>Si el producto no cumple sus requerimientos puede solucitar su devolucion</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-medal"></i>
+                </div>
+                <h3>Calidad Garantizada</h3>
+                <p>Productos de las mejores marcas internacionales</p>
+            </div>
         </div>
     </section>
 
@@ -126,7 +141,7 @@
                 <h3>Enlaces Rápidos</h3>
                 <ul>
                     <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#catalogo">Catálogo</a></li>
+                    <li><a href="catalogo.html">Catálogo</a></li>
                     <li><a href="#ubicacion">Ubicación</a></li>
                     <li><a href="#contacto">Contacto</a></li>
                 </ul>
@@ -153,12 +168,6 @@
         </div>
     </footer>
 
-    <div class="cart-section">
-        <button class="cart-button" onclick="toggleCart()">
-            🛒
-            <span class="cart-count" id="cart-count">0</span>
-        </button>
-    </div>
 
     <div class="cart-modal" id="cart-modal">
         <div class="cart-content">
@@ -170,19 +179,6 @@
             <button class="whatsapp-button" onclick="sendWhatsAppMessage()">
                 📱 Consultar por WhatsApp
             </button>
-        </div>
-    </div>
-
-    <!-- Modal de detalles del producto -->
-    <div class="product-modal" id="product-modal">
-        <div class="product-modal-content">
-            <div class="modal-header">
-                <h3>Detalles del Producto</h3>
-                <button class="close-modal" onclick="closeProductModal()">×</button>
-            </div>
-            <div class="product-modal-body" id="product-modal-body">
-                <!-- Contenido dinámico -->
-            </div>
         </div>
     </div>
 
