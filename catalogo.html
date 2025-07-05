@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo Completo - Sandez Distribuidora de Calzado</title>
+    <link rel="icon" href="img/logo1.png">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo-container">
+                <a href="index.html" class="logo-link">
+                    <img src="img/logo1.png" alt="Sandez Logo" class="logo-img">
+                </a>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html#inicio" class="nav-link">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link active">Catálogo</a>
+                    <div class="dropdown" id="dropdown">
+                        <a href="#" class="dropdown-item" onclick="filterProducts('deportivo')">Deportivo</a>
+                        <a href="#" class="dropdown-item" onclick="filterProducts('casual')">Casual</a>
+                        <a href="#" class="dropdown-item" onclick="filterProducts('hombre')">Hombre</a>
+                        <a href="#" class="dropdown-item" onclick="filterProducts('mujer')">Mujer</a>
+                        <a href="#" class="dropdown-item" onclick="filterProducts('running')">Running</a>
+                        <a href="#" class="dropdown-item" onclick="filterProducts('urbano')">Urbano</a>
+                        <a href="#" class="dropdown-item" onclick="filterProducts('todos')">Ver Todos</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#ubicacion" class="nav-link">Ubicación</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#contacto" class="nav-link">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a href="nosotros.html" class="nav-link">Nosotros</a>
+                </li>
+            </ul>
+            <button class="mobile-menu-btn" id="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <span class="menu-line"></span>
+                <span class="menu-line"></span>
+                <span class="menu-line"></span>
+            </button>
+        </div>
+    </nav>
+
+    <section id="catalogo" class="section catalog-page">
+        <div class="section-header">
+            <h2 class="section-title">Nuestro Catálogo Completo</h2>
+            <p class="section-subtitle">Descubre nuestra amplia selección de calzado</p>
+        </div>
+        
+        <div class="catalog-tools">
+            <div class="search-container">
+                <input type="text" class="search-input" id="search-input" placeholder="Buscar zapatillas...">
+                <span class="search-icon">🔍</span>
+            </div>
+            
+            <div class="sort-container">
+                <select id="sort-select" class="sort-select" onchange="sortProducts()">
+                    <option value="default">Ordenar por</option>
+                    <option value="price-asc">Precio: Menor a Mayor</option>
+                    <option value="price-desc">Precio: Mayor a Menor</option>
+                    <option value="name-asc">Nombre: A-Z</option>
+                    <option value="name-desc">Nombre: Z-A</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="filters-container">
+            <button class="filter-btn active" onclick="filterProducts('todos')">Todos</button>
+            <button class="filter-btn" onclick="filterProducts('hombre')">Hombre</button>
+            <button class="filter-btn" onclick="filterProducts('mujer')">Mujer</button>
+            <button class="filter-btn" onclick="filterProducts('deportivo')">Deportivo</button>
+            <button class="filter-btn" onclick="filterProducts('casual')">Casual</button>
+            <button class="filter-btn" onclick="filterProducts('running')">Running</button>
+            <button class="filter-btn" onclick="filterProducts('urbano')">Urbano</button>
+        </div>
+        
+        <div class="products-count" id="products-count"></div>
+        
+        <div class="products-grid" id="products-grid">
+            <!-- Los productos se generarán dinámicamente -->
+        </div>
+        
+        <div class="pagination" id="pagination">
+            <!-- Paginación se generará dinámicamente -->
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <a href="index.html"><img src="img/logo1.png" alt="Sandez Logo" class="footer-logo-img"></a>
+                <p>Distribuidora de calzado con las mejores marcas y modelos</p>
+            </div>
+            <div class="footer-links">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="index.html#inicio">Inicio</a></li>
+                    <li><a href="catalogo.html">Catálogo</a></li>
+                    <li><a href="index.html#ubicacion">Ubicación</a></li>
+                    <li><a href="index.html#contacto">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contacto</h3>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> Calle Principal #123, Bogotá</li>
+                    <li><i class="fas fa-phone"></i> +57 317 419 6677</li>
+                    <li><i class="fas fa-envelope"></i> info@sandez.com</li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Síguenos</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Distribuidora Sandez. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <div class="cart-section">
+        <button class="cart-button" onclick="toggleCart()">
+            🛒
+            <span class="cart-count" id="cart-count">0</span>
+        </button>
+    </div>
+
+    <div class="cart-modal" id="cart-modal">
+        <div class="cart-content">
+            <div class="modal-header">
+                <h3>Tu Carrito</h3>
+                <button class="close-modal" onclick="toggleCart()">×</button>
+            </div>
+            <div id="cart-items"></div>
+            <button class="whatsapp-button" onclick="sendWhatsAppMessage()">
+                📱 Consultar por WhatsApp
+            </button>
+        </div>
+    </div>
+
+    <!-- Modal de detalles del producto -->
+    <div class="product-modal" id="product-modal">
+        <div class="product-modal-content">
+            <div class="modal-header">
+                <h3>Detalles del Producto</h3>
+                <button class="close-modal" onclick="closeProductModal()">×</button>
+            </div>
+            <div class="product-modal-body" id="product-modal-body">
+                <!-- Contenido dinámico -->
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
