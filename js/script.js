@@ -2,9 +2,9 @@
 const products = [
     { 
         id: 1, 
-        name: "Ref: W-96-35-40-108", 
+        name: "Zapatillas Nike Air Max 270", 
         price: "$180.000", 
-        category: ["", "hombre", ""],
+        category: ["deportivo", "hombre", "urbano"],
         description: "Las Nike Air Max 270 ofrecen una amortiguación innovadora que proporciona comodidad durante todo el día. Con su diseño moderno y colores vibrantes, son perfectas para el estilo urbano y el running.",
         features: [
             "Amortiguación Air Max para máxima comodidad",
@@ -12,12 +12,12 @@ const products = [
             "Suela de goma duradera",
             "Disponible en varios colores"
         ],
-        sizes: ["", "", "", "", "", "", ""],
-        image: "img/p.png"
+        sizes: ["38", "39", "40", "41", "42", "43", "44"],
+        image: "img/p1.jpg"
     },
     { 
         id: 2, 
-        name: "Ref: M-18-40-45", 
+        name: "Zapatillas Adidas Ultraboost", 
         price: "$220.000", 
         category: ["deportivo", "mujer", "running"],
         description: "Las Adidas Ultraboost son el epítome de la tecnología en calzado deportivo. Con su suela Boost que devuelve la energía con cada paso, son ideales para corredores exigentes.",
@@ -28,24 +28,126 @@ const products = [
             "Plantilla Ortholite para confort"
         ],
         sizes: ["36", "37", "38", "39", "40"],
-        image: "img/2.jpeg"
+        image: "img/p2.jpg"
     },
-    // ... (otros productos con el mismo formato, cada uno con su propiedad image)
+    { 
+        id: 3, 
+        name: "Zapatillas Puma RS-X", 
+        price: "$190.000", 
+        category: ["casual", "hombre", "urbano"],
+        description: "Las Puma RS-X combinan estilo retro con comodidad moderna. Su diseño llamativo y su suela amortiguada las hacen perfectas para el uso diario.",
+        features: [
+            "Estilo retro futurista",
+            "Suela RS amortiguada",
+            "Materiales premium",
+            "Cómodas para todo el día"
+        ],
+        sizes: ["39", "40", "41", "42", "43"],
+        image: "img/p3.jpg"
+    },
+    { 
+        id: 4, 
+        name: "Zapatillas New Balance 574", 
+        price: "$210.000", 
+        category: ["casual", "mujer", "urbano"],
+        description: "Las clásicas New Balance 574 ofrecen estilo y comodidad en un diseño atemporal. Perfectas para quienes buscan un calzado versátil y duradero.",
+        features: [
+            "Diseño clásico atemporal",
+            "Suela ENCAP para soporte y durabilidad",
+            "Plantilla cómoda",
+            "Variedad de colores"
+        ],
+        sizes: ["35", "36", "37", "38", "39"],
+        image: "img/p4.jpg"
+    },
+    { 
+        id: 5, 
+        name: "Zapatillas Reebok Nano X", 
+        price: "$230.000", 
+        category: ["deportivo", "hombre", "running"],
+        description: "Diseñadas para entrenamiento cruzado, las Reebok Nano X ofrecen estabilidad y flexibilidad para cualquier tipo de ejercicio.",
+        features: [
+            "FlexWeave para soporte y flexibilidad",
+            "Suela de goma duradera",
+            "Amortiguación Floatride Energy",
+            "Ideal para crossfit"
+        ],
+        sizes: ["40", "41", "42", "43", "44"],
+        image: "img/p5.jpg"
+    },
+    { 
+        id: 6, 
+        name: "Zapatillas Vans Old Skool", 
+        price: "$160.000", 
+        category: ["casual", "hombre", "mujer"],
+        description: "Las icónicas Vans Old Skool son un clásico del calzado urbano. Con su diseño sencillo y su durabilidad, son perfectas para el día a día.",
+        features: [
+            "Estilo clásico con franja lateral",
+            "Suela de goma con agarre",
+            "Forro acolchado para comodidad",
+            "Disponible en múltiples colores"
+        ],
+        sizes: ["36", "37", "38", "39", "40", "41", "42"],
+        image: "img/p6.jpg"
+    },
+    { 
+        id: 7, 
+        name: "Zapatillas Under Armour HOVR Phantom", 
+        price: "$250.000", 
+        category: ["deportivo", "running", "hombre"],
+        description: "Tecnología HOVR para una carrera sin esfuerzo. Las Under Armour HOVR Phantom ofrecen una amortiguación excepcional y retorno de energía.",
+        features: [
+            "Tecnología HOVR para amortiguación",
+            "Upper sin costuras para mayor comodidad",
+            "Suela de goma de alta tracción",
+            "Conectividad con app MapMyRun"
+        ],
+        sizes: ["39", "40", "41", "42", "43", "44"],
+        image: "img/p7.jpg"
+    },
+    { 
+        id: 8, 
+        name: "Zapatillas Converse Chuck Taylor All Star", 
+        price: "$150.000", 
+        category: ["casual", "hombre", "mujer"],
+        description: "Las clásicas Converse Chuck Taylor All Star son un ícono de la moda casual. Ideales para combinar con cualquier estilo.",
+        features: [
+            "Diseño clásico atemporal",
+            "Suela de goma resistente",
+            "Capellada de lona duradera",
+            "Disponible en múltiples colores"
+        ],
+        sizes: ["36", "37", "38", "39", "40", "41", "42"],
+        image: "img/p8.jpg"
+    }
 ];
 
 let cart = [];
+const productsPerPage = 8;
+let currentPage = 1;
+let filteredProducts = [...products];
 
 // Renderizar productos
-function renderProducts(productsToShow = products) {
+function renderProducts(productsToShow = filteredProducts) {
     const grid = document.getElementById('products-grid');
     grid.innerHTML = '';
     
-    if (productsToShow.length === 0) {
+    // Calcular productos para la página actual
+    const startIndex = (currentPage - 1) * productsPerPage;
+    const endIndex = startIndex + productsPerPage;
+    const paginatedProducts = productsToShow.slice(startIndex, endIndex);
+    
+    if (paginatedProducts.length === 0) {
         grid.innerHTML = '<p class="no-products">No se encontraron productos que coincidan con tu búsqueda</p>';
+        updateProductsCount(0);
+        renderPagination(0);
         return;
     }
     
-    productsToShow.forEach(product => {
+    updateProductsCount(productsToShow.length);
+    renderPagination(productsToShow.length);
+    
+    paginatedProducts.forEach(product => {
         const productCard = document.createElement('div');
         productCard.className = 'product-card';
         productCard.innerHTML = `
@@ -64,24 +166,208 @@ function renderProducts(productsToShow = products) {
     });
 }
 
-// Filtrar productos
-function filterProducts(category) {
-    if (category === 'todos') {
-        renderProducts(products);
-    } else {
-        const filtered = products.filter(product => 
-            product.category.includes(category)
-        );
-        renderProducts(filtered);
+// Actualizar contador de productos
+function updateProductsCount(count) {
+    const productsCount = document.getElementById('products-count');
+    if (productsCount) {
+        productsCount.textContent = `Mostrando ${Math.min((currentPage - 1) * productsPerPage + 1, count)}-${Math.min(currentPage * productsPerPage, count)} de ${count} productos`;
+    }
+}
+
+// Renderizar paginación
+function renderPagination(totalProducts) {
+    const pagination = document.getElementById('pagination');
+    if (!pagination) return;
+    
+    pagination.innerHTML = '';
+    const totalPages = Math.ceil(totalProducts / productsPerPage);
+    
+    if (totalPages <= 1) return;
+    
+    // Botón Anterior
+    const prevBtn = document.createElement('button');
+    prevBtn.className = 'page-btn';
+    prevBtn.innerHTML = '&laquo;';
+    prevBtn.disabled = currentPage === 1;
+    prevBtn.onclick = () => {
+        if (currentPage > 1) {
+            currentPage--;
+            renderProducts();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    };
+    pagination.appendChild(prevBtn);
+    
+    // Botones de página
+    const maxVisiblePages = 5;
+    let startPage = Math.max(1, currentPage - Math.floor(maxVisiblePages / 2));
+    let endPage = Math.min(totalPages, startPage + maxVisiblePages - 1);
+    
+    if (endPage - startPage + 1 < maxVisiblePages) {
+        startPage = Math.max(1, endPage - maxVisiblePages + 1);
     }
     
-    // Cerrar menú móvil si está abierto
-    document.querySelector('.nav-menu').classList.remove('active');
+    if (startPage > 1) {
+        const firstPageBtn = document.createElement('button');
+        firstPageBtn.className = 'page-btn';
+        firstPageBtn.textContent = '1';
+        firstPageBtn.onclick = () => {
+            currentPage = 1;
+            renderProducts();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        };
+        pagination.appendChild(firstPageBtn);
+        
+        if (startPage > 2) {
+            const ellipsis = document.createElement('span');
+            ellipsis.textContent = '...';
+            ellipsis.style.padding = '0.5rem';
+            pagination.appendChild(ellipsis);
+        }
+    }
     
-    // Scroll al catálogo
-    document.getElementById('catalogo').scrollIntoView({ 
-        behavior: 'smooth' 
+    for (let i = startPage; i <= endPage; i++) {
+        const pageBtn = document.createElement('button');
+        pageBtn.className = `page-btn ${i === currentPage ? 'active' : ''}`;
+        pageBtn.textContent = i;
+        pageBtn.onclick = () => {
+            currentPage = i;
+            renderProducts();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        };
+        pagination.appendChild(pageBtn);
+    }
+    
+    if (endPage < totalPages) {
+        if (endPage < totalPages - 1) {
+            const ellipsis = document.createElement('span');
+            ellipsis.textContent = '...';
+            ellipsis.style.padding = '0.5rem';
+            pagination.appendChild(ellipsis);
+        }
+        
+        const lastPageBtn = document.createElement('button');
+        lastPageBtn.className = 'page-btn';
+        lastPageBtn.textContent = totalPages;
+        lastPageBtn.onclick = () => {
+            currentPage = totalPages;
+            renderProducts();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        };
+        pagination.appendChild(lastPageBtn);
+    }
+    
+    // Botón Siguiente
+    const nextBtn = document.createElement('button');
+    nextBtn.className = 'page-btn';
+    nextBtn.innerHTML = '&raquo;';
+    nextBtn.disabled = currentPage === totalPages;
+    nextBtn.onclick = () => {
+        if (currentPage < totalPages) {
+            currentPage++;
+            renderProducts();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    };
+    pagination.appendChild(nextBtn);
+}
+
+// Filtrar productos
+function filterProducts(category) {
+    // Resetear a la primera página
+    currentPage = 1;
+    
+    // Actualizar botones de filtro activos
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+        btn.classList.remove('active');
+        if (btn.getAttribute('onclick').includes(`'${category}'`)) {
+            btn.classList.add('active');
+        }
     });
+
+    if (category === 'todos') {
+        filteredProducts = [...products];
+    } else {
+        filteredProducts = products.filter(product => 
+            product.category.includes(category)
+        );
+    }
+    
+    renderProducts();
+    
+    // Cerrar menú móvil si está abierto
+    document.querySelector('.nav-menu')?.classList.remove('active');
+    
+    // Scroll al inicio del catálogo
+    if (window.location.pathname.includes('catalogo.html')) {
+        window.scrollTo({
+            top: document.getElementById('catalogo').offsetTop - 80,
+            behavior: 'smooth'
+        });
+    }
+}
+
+// Ordenar productos
+function sortProducts() {
+    const sortSelect = document.getElementById('sort-select');
+    const sortValue = sortSelect.value;
+    
+    // Resetear a la primera página
+    currentPage = 1;
+    
+    switch(sortValue) {
+        case 'price-asc':
+            filteredProducts.sort((a, b) => {
+                const priceA = parseFloat(a.price.replace(/[^0-9]/g, ''));
+                const priceB = parseFloat(b.price.replace(/[^0-9]/g, ''));
+                return priceA - priceB;
+            });
+            break;
+        case 'price-desc':
+            filteredProducts.sort((a, b) => {
+                const priceA = parseFloat(a.price.replace(/[^0-9]/g, ''));
+                const priceB = parseFloat(b.price.replace(/[^0-9]/g, ''));
+                return priceB - priceA;
+            });
+            break;
+        case 'name-asc':
+            filteredProducts.sort((a, b) => a.name.localeCompare(b.name));
+            break;
+        case 'name-desc':
+            filteredProducts.sort((a, b) => b.name.localeCompare(a.name));
+            break;
+        default:
+            // No ordenar
+            break;
+    }
+    
+    renderProducts();
+}
+
+// Buscar productos
+function setupSearch() {
+    const searchInput = document.getElementById('search-input');
+    const searchIcon = document.querySelector('.search-icon');
+    
+    const performSearch = () => {
+        const searchTerm = searchInput.value.toLowerCase();
+        currentPage = 1;
+        
+        if (searchTerm.length > 0) {
+            filteredProducts = products.filter(product => 
+                product.name.toLowerCase().includes(searchTerm) ||
+                product.description.toLowerCase().includes(searchTerm) ||
+                product.category.some(cat => cat.toLowerCase().includes(searchTerm))
+            );
+        } else {
+            filteredProducts = [...products];
+        }
+        
+        renderProducts();
+    };
+    
+    searchInput.addEventListener('input', performSearch);
+    searchIcon.addEventListener('click', performSearch);
 }
 
 // Agregar al carrito
@@ -121,6 +407,8 @@ function updateCartDisplay() {
     cartCount.textContent = totalItems;
     
     const cartItems = document.getElementById('cart-items');
+    if (!cartItems) return;
+    
     cartItems.innerHTML = '';
     
     if (cart.length === 0) {
@@ -225,30 +513,7 @@ function sendContactMessage() {
     window.open(whatsappUrl, '_blank');
 }
 
-// Función para buscar productos
-function setupSearch() {
-    const searchInput = document.getElementById('search-input');
-    const searchIcon = document.querySelector('.search-icon');
-    
-    const performSearch = () => {
-        const searchTerm = searchInput.value.toLowerCase();
-        if (searchTerm.length > 0) {
-            const filtered = products.filter(product => 
-                product.name.toLowerCase().includes(searchTerm) ||
-                product.description.toLowerCase().includes(searchTerm) ||
-                product.category.some(cat => cat.toLowerCase().includes(searchTerm))
-            );
-            renderProducts(filtered);
-        } else {
-            renderProducts(products);
-        }
-    };
-    
-    searchInput.addEventListener('input', performSearch);
-    searchIcon.addEventListener('click', performSearch);
-}
-
-// Función para mostrar el modal del producto
+// Mostrar modal del producto
 function showProductModal(productId) {
     const product = products.find(p => p.id === productId);
     if (!product) return;
@@ -273,7 +538,7 @@ function showProductModal(productId) {
             <div class="product-details-section">
                 <h4>Tallas disponibles:</h4>
                 <div class="size-buttons">
-                    ${product.sizes.map(size => `<button class="size-btn">${size}</button>`).join('')}
+                    ${product.sizes.map(size => size ? `<button class="size-btn">${size}</button>` : '').join('')}
                 </div>
             </div>
             
@@ -288,15 +553,24 @@ function showProductModal(productId) {
         </div>
     `;
     
+    // Manejar selección de tallas
+    const sizeButtons = modalBody.querySelectorAll('.size-btn');
+    sizeButtons.forEach(btn => {
+        btn.addEventListener('click', function() {
+            sizeButtons.forEach(b => b.classList.remove('selected'));
+            this.classList.add('selected');
+        });
+    });
+    
     document.getElementById('product-modal').style.display = 'flex';
 }
 
-// Función para cerrar el modal
+// Cerrar modal del producto
 function closeProductModal() {
     document.getElementById('product-modal').style.display = 'none';
 }
 
-// Función para enviar mensaje de WhatsApp sobre un solo producto
+// Enviar mensaje de WhatsApp sobre un producto
 function sendSingleProductWhatsApp(productId) {
     const product = products.find(p => p.id === productId);
     if (!product) return;
@@ -381,11 +655,31 @@ document.addEventListener('keydown', (e) => {
 
 // Inicializar la página
 document.addEventListener('DOMContentLoaded', () => {
-    renderProducts();
-    setupSearch();
+    // Verificar si estamos en la página de catálogo
+    const isCatalogPage = window.location.pathname.includes('catalogo.html');
     
-    // Prevenir recarga del formulario
-    document.querySelector('.contact-form').addEventListener('submit', (e) => {
+    if (isCatalogPage) {
+        // Configurar búsqueda y ordenamiento
+        setupSearch();
+        
+        // Verificar parámetros de URL para filtros
+        const urlParams = new URLSearchParams(window.location.search);
+        const filter = urlParams.get('filter');
+        
+        if (filter) {
+            filterProducts(filter);
+        } else {
+            // Mostrar todos los productos por defecto
+            filteredProducts = [...products];
+            renderProducts();
+        }
+    } else {
+        // Para otras páginas, solo renderizar los productos necesarios
+        renderProducts();
+    }
+    
+    // Prevenir recarga del formulario de contacto
+    document.querySelector('.contact-form')?.addEventListener('submit', (e) => {
         e.preventDefault();
         sendContactMessage();
     });
