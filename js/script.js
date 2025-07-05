@@ -2,9 +2,9 @@
 const products = [
     { 
         id: 1, 
-        name: "Zapatillas Nike Air Max 270", 
+        name: "Ref: W-96-35-40-108", 
         price: "$180.000", 
-        category: ["deportivo", "hombre", "urbano"],
+        category: ["casual", "hombre"],
         description: "Las Nike Air Max 270 ofrecen una amortiguación innovadora que proporciona comodidad durante todo el día. Con su diseño moderno y colores vibrantes, son perfectas para el estilo urbano y el running.",
         features: [
             "Amortiguación Air Max para máxima comodidad",
@@ -13,13 +13,13 @@ const products = [
             "Disponible en varios colores"
         ],
         sizes: ["38", "39", "40", "41", "42", "43", "44"],
-        image: "img/p1.jpg"
+        image: "img/1.jpeg"
     },
     { 
         id: 2, 
-        name: "Zapatillas Adidas Ultraboost", 
+        name: "Ref: M-18-40-45", 
         price: "$220.000", 
-        category: ["deportivo", "mujer", "running"],
+        category: ["casual", "hombre", ],
         description: "Las Adidas Ultraboost son el epítome de la tecnología en calzado deportivo. Con su suela Boost que devuelve la energía con cada paso, son ideales para corredores exigentes.",
         features: [
             "Tecnología Boost para máxima energía",
@@ -28,13 +28,13 @@ const products = [
             "Plantilla Ortholite para confort"
         ],
         sizes: ["36", "37", "38", "39", "40"],
-        image: "img/p2.jpg"
+        image: "img/2.jpeg"
     },
     { 
         id: 3, 
-        name: "Zapatillas Puma RS-X", 
+        name: "Ref: 226-39-44-156", 
         price: "$190.000", 
-        category: ["casual", "hombre", "urbano"],
+        category: ["casual", "hombre", ],
         description: "Las Puma RS-X combinan estilo retro con comodidad moderna. Su diseño llamativo y su suela amortiguada las hacen perfectas para el uso diario.",
         features: [
             "Estilo retro futurista",
@@ -43,13 +43,13 @@ const products = [
             "Cómodas para todo el día"
         ],
         sizes: ["39", "40", "41", "42", "43"],
-        image: "img/p3.jpg"
+        image: "img/3.jpeg"
     },
     { 
         id: 4, 
-        name: "Zapatillas New Balance 574", 
+        name: "Ref: 101-36-40-120", 
         price: "$210.000", 
-        category: ["casual", "mujer", "urbano"],
+        category: ["casual", "mujer"],
         description: "Las clásicas New Balance 574 ofrecen estilo y comodidad en un diseño atemporal. Perfectas para quienes buscan un calzado versátil y duradero.",
         features: [
             "Diseño clásico atemporal",
@@ -58,11 +58,11 @@ const products = [
             "Variedad de colores"
         ],
         sizes: ["35", "36", "37", "38", "39"],
-        image: "img/p4.jpg"
+        image: "img/4.jpeg"
     },
     { 
         id: 5, 
-        name: "Zapatillas Reebok Nano X", 
+        name: "Ref: 35-43", 
         price: "$230.000", 
         category: ["deportivo", "hombre", "running"],
         description: "Diseñadas para entrenamiento cruzado, las Reebok Nano X ofrecen estabilidad y flexibilidad para cualquier tipo de ejercicio.",
@@ -73,13 +73,13 @@ const products = [
             "Ideal para crossfit"
         ],
         sizes: ["40", "41", "42", "43", "44"],
-        image: "img/p5.jpg"
+        image: "img/5.jpeg"
     },
     { 
         id: 6, 
-        name: "Zapatillas Vans Old Skool", 
+        name: "Ref: 35-43", 
         price: "$160.000", 
-        category: ["casual", "hombre", "mujer"],
+        category: ["deportivo", "hombre", "mujer","running"],
         description: "Las icónicas Vans Old Skool son un clásico del calzado urbano. Con su diseño sencillo y su durabilidad, son perfectas para el día a día.",
         features: [
             "Estilo clásico con franja lateral",
@@ -88,13 +88,13 @@ const products = [
             "Disponible en múltiples colores"
         ],
         sizes: ["36", "37", "38", "39", "40", "41", "42"],
-        image: "img/p6.jpg"
+        image: "img/6.jpeg"
     },
     { 
         id: 7, 
-        name: "Zapatillas Under Armour HOVR Phantom", 
+        name: "Ref: 433k-18-23-168", 
         price: "$250.000", 
-        category: ["deportivo", "running", "hombre"],
+        category: ["niños", "casual", "hombre"],
         description: "Tecnología HOVR para una carrera sin esfuerzo. Las Under Armour HOVR Phantom ofrecen una amortiguación excepcional y retorno de energía.",
         features: [
             "Tecnología HOVR para amortiguación",
@@ -103,13 +103,13 @@ const products = [
             "Conectividad con app MapMyRun"
         ],
         sizes: ["39", "40", "41", "42", "43", "44"],
-        image: "img/p7.jpg"
+        image: "img/7.jpeg"
     },
     { 
         id: 8, 
-        name: "Zapatillas Converse Chuck Taylor All Star", 
+        name: "Ref: 2046-35-40-120", 
         price: "$150.000", 
-        category: ["casual", "hombre", "mujer"],
+        category: ["casual", "mujer"],
         description: "Las clásicas Converse Chuck Taylor All Star son un ícono de la moda casual. Ideales para combinar con cualquier estilo.",
         features: [
             "Diseño clásico atemporal",
@@ -118,8 +118,38 @@ const products = [
             "Disponible en múltiples colores"
         ],
         sizes: ["36", "37", "38", "39", "40", "41", "42"],
-        image: "img/p8.jpg"
-    }
+        image: "img/8.jpeg"
+    },
+    { 
+        id: 9, 
+        name: "Ref: 217-36-40-132", 
+        price: "$150.000", 
+        category: ["casual", "mujer", "hombre"],
+        description: "Las clásicas Converse Chuck Taylor All Star son un ícono de la moda casual. Ideales para combinar con cualquier estilo.",
+        features: [
+            "Diseño clásico atemporal",
+            "Suela de goma resistente",
+            "Capellada de lona duradera",
+            "Disponible en múltiples colores"
+        ],
+        sizes: ["36", "37", "38", "39", "40", "41", "42"],
+        image: "img/9.jpeg"
+    },
+    { 
+        id: 10, 
+        name: "Ref: 828-24-29-120", 
+        price: "$150.000", 
+        category: ["niño", "casuel"],
+        description: "Las clásicas Converse Chuck Taylor All Star son un ícono de la moda casual. Ideales para combinar con cualquier estilo.",
+        features: [
+            "Diseño clásico atemporal",
+            "Suela de goma resistente",
+            "Capellada de lona duradera",
+            "Disponible en múltiples colores"
+        ],
+        sizes: ["36", "37", "38", "39", "40", "41", "42"],
+        image: "img/10.jpeg"
+    },
 ];
 
 let cart = [];
