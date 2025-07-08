@@ -1,4 +1,4 @@
-// Datos de productos ampliados
+// Datos de     os ampliados
 const products = [
     { 
         id: 1, 
@@ -420,9 +420,518 @@ const products = [
         sizes: ["36", "37", "38", "39", "40", "41", "42"],
         image: "img/28.jpeg"
     },
-    
+     { 
+        id: 29, 
+        name: "Ref: 203-M-39-44-198", 
+        price: "$150.000", 
+        category: ["casual", "hombre"],
+        description: "Las clásicas Converse Chuck Taylor All Star son un ícono de la moda casual. Ideales para combinar con cualquier estilo.",
+        features: [
+            "Diseño clásico atemporal",
+            "Suela de goma resistente",
+            "Capellada de lona duradera",
+            "Disponible en múltiples colores"
+        ],
+        sizes: ["36", "37", "38", "39", "40", "41", "42"],
+        image: "img/29.jpeg"
+    },
+     { 
+        id: 30, 
+        name: "Ref: H185-38-43-564", 
+        price: "$150.000", 
+        category: ["casual", "hombre"],
+        description: "Las clásicas Converse Chuck Taylor All Star son un ícono de la moda casual. Ideales para combinar con cualquier estilo.",
+        features: [
+            "Diseño clásico atemporal",
+            "Suela de goma resistente",
+            "Capellada de lona duradera",
+            "Disponible en múltiples colores"
+        ],
+        sizes: ["36", "37", "38", "39", "40", "41", "42"],
+        image: "img/30.jpeg"
+    },
+     { 
+        id: 31, 
+        name: "Ref: 40-45", 
+        price: "$150.000", 
+        category: ["deportivo", "hombre"],
+        description: "Las clásicas Converse Chuck Taylor All Star son un ícono de la moda casual. Ideales para combinar con cualquier estilo.",
+        features: [
+            "Diseño clásico atemporal",
+            "Suela de goma resistente",
+            "Capellada de lona duradera",
+            "Disponible en múltiples colores"
+        ],
+        sizes: ["36", "37", "38", "39", "40", "41", "42"],
+        image: "img/31.jpeg"
+    },
+     { 
+        id: 32, 
+        name: "Ref: 34-38  39-43", 
+        price: "$150.000", 
+        category: ["deportivo", "hombre"],
+        description: "Las clásicas Converse Chuck Taylor All Star son un ícono de la moda casual. Ideales para combinar con cualquier estilo.",
+        features: [
+            "Diseño clásico atemporal",
+            "Suela de goma resistente",
+            "Capellada de lona duradera",
+            "Disponible en múltiples colores"
+        ],
+        sizes: ["36", "37", "38", "39", "40", "41", "42"],
+        image: "img/32.jpeg"
+    },
+     { 
+        id: 33, 
+        name: "Ref: 35-38  39-43", 
+        price: "$150.000", 
+        category: ["deportivo", "hombre"],
+        description: "Las clásicas Converse Chuck Taylor All Star son un ícono de la moda casual. Ideales para combinar con cualquier estilo.",
+        features: [
+            "Diseño clásico atemporal",
+            "Suela de goma resistente",
+            "Capellada de lona duradera",
+            "Disponible en múltiples colores"
+        ],
+        sizes: ["36", "37", "38", "39", "40", "41", "42"],
+        image: "img/33.jpeg"
+    },
+     { 
+        id: 34, 
+        name: "Ref: D195-A-35-40-540", 
+        price: "$150.000", 
+        category: ["casual", "hombre", "urbano"],
+        description: "Las clásicas Converse Chuck Taylor All Star son un ícono de la moda casual. Ideales para combinar con cualquier estilo.",
+        features: [
+            "Diseño clásico atemporal",
+            "Suela de goma resistente",
+            "Capellada de lona duradera",
+            "Disponible en múltiples colores"
+        ],
+        sizes: ["36", "37", "38", "39", "40", "41", "42"],
+        image: "img/34.jpeg"
+    },
+     { 
+        id: 35, 
+        name: "Ref: H205-C-38-43-540", 
+        price: "$150.000", 
+        category: ["casual", "hombre", "urbano"],
+        description: "Las clásicas Converse Chuck Taylor All Star son un ícono de la moda casual. Ideales para combinar con cualquier estilo.",
+        features: [
+            "Diseño clásico atemporal",
+            "Suela de goma resistente",
+            "Capellada de lona duradera",
+            "Disponible en múltiples colores"
+        ],
+        sizes: ["36", "37", "38", "39", "40", "41", "42"],
+        image: "img/35.jpeg"
+    },
+     { 
+        id: 36, 
+        name: "Ref: 35-40", 
+        price: "$150.000", 
+        category: ["casual", "mujer", "urbano"],
+        description: "Las clásicas Converse Chuck Taylor All Star son un ícono de la moda casual. Ideales para combinar con cualquier estilo.",
+        features: [
+            "Diseño clásico atemporal",
+            "Suela de goma resistente",
+            "Capellada de lona duradera",
+            "Disponible en múltiples colores"
+        ],
+        sizes: ["36", "37", "38", "39", "40", "41", "42"],
+        image: "img/36.jpeg"
+    },
+    { 
+        id: 37, 
+        name: "Ref: GRETTA-35-40", 
+        price: "$150.000", 
+        category: ["casual", "mujer", "urbano"],
+        description: "Zapatillas urbanas con diseño moderno y cómodo, ideal para uso diario. Fabricadas con materiales resistentes que combinan estilo y durabilidad.",
+        features: [
+            "Diseño urbano moderno",
+            "Materiales resistentes",
+            "Suela de goma antideslizante",
+            "Ajuste cómodo y seguro"
+        ],
+        sizes: ["35", "36", "37", "38", "39", "40"],
+        image: "img/37.jpeg"
+    },
+    { 
+        id: 38, 
+        name: "Ref: FENIX 35-40 39-44", 
+        price: "$160.000", 
+        category: ["deportivo", "hombre"],
+        description: "Zapatillas deportivas de alto rendimiento con tecnología de amortiguación para entrenamiento intenso. Diseño ergonómico que se adapta al pie.",
+        features: [
+            "Tecnología de amortiguación",
+            "Materiales transpirables",
+            "Suela de alta tracción",
+            "Soporte lateral reforzado"
+        ],
+        sizes: ["35", "36", "37", "38", "39", "40", "41", "42", "43", "44"],
+        image: "img/38.jpeg"
+    },
+    { 
+        id: 39, 
+        name: "Ref: S-341-39-44-144", 
+        price: "$170.000", 
+        category: ["casual", "hombre"],
+        description: "Zapatillas Air-Shoe con diseño ligero y cómodo, perfectas para el uso diario. Estilo versátil que combina con cualquier outfit.",
+        features: [
+            "Tecnología de aire para mayor comodidad",
+            "Upper en malla transpirable",
+            "Suela flexible",
+            "Diseño unisex"
+        ],
+        sizes: ["39", "40", "41", "42", "43", "44"],
+        image: "img/39.jpeg"
+    },
+    { 
+        id: 40, 
+        name: "Ref: 5-358-36-41-39-44", 
+        price: "$180.000", 
+        category: ["deportivo", "hombre", "running"],
+        description: "Zapatillas Surfing diseñadas para corredores, con excelente amortiguación y tracción en todo tipo de superficies.",
+        features: [
+            "Amortiguación reactiva",
+            "Upper transpirable",
+            "Suela de goma duradera",
+            "Refuerzos estratégicos"
+        ],
+        sizes: ["36", "37", "38", "39", "40", "41", "42", "43", "44"],
+        image: "img/40.jpeg"
+    },
+    { 
+        id: 41, 
+        name: "Ref: 203-35-40-192", 
+        price: "$190.000", 
+        category: ["casual", "mujer", ""],
+        description: "Zapatillas especializadas para golf con excelente tracción y estabilidad. Diseño elegante que cumple con los requisitos del deporte.",
+        features: [
+            "Tacos integrados para mejor tracción",
+            "Materiales resistentes al agua",
+            "Soporte para movimientos laterales",
+            "Plantilla extraíble"
+        ],
+        sizes: ["35", "36", "37", "38", "39", "40"],
+        image: "img/41.jpeg"
+    },
+    { 
+        id: 42, 
+        name: "Ref: 211-W-36-40-192", 
+        price: "$160.000", 
+        category: ["casual", "mujer"],
+        description: "Zapatillas femeninas con diseño elegante y cómodo, perfectas para el día a día. Combinan estilo y funcionalidad.",
+        features: [
+            "Diseño femenino moderno",
+            "Plantilla acolchada",
+            "Suela flexible",
+            "Variedad de colores"
+        ],
+        sizes: ["36", "37", "38", "39", "40"],
+        image: "img/42.jpeg"
+    },
+    { 
+        id: 43, 
+        name: "Ref: 35-43", 
+        price: "$160.000", 
+        category: ["deportivo", "hombre"],
+        description: "Zapatillas femeninas con diseño elegante y cómodo, perfectas para el día a día. Combinan estilo y funcionalidad.",
+        features: [
+            "Diseño femenino moderno",
+            "Plantilla acolchada",
+            "Suela flexible",
+            "Variedad de colores"
+        ],
+        sizes: ["36", "37", "38", "39", "40"],
+        image: "img/43.jpeg"
+    },
+    { 
+        id: 44, 
+        name: "Ref: 007-M3-35-40", 
+        price: "$150.000", 
+        category: ["casual", "hombre"],
+        description: "Zapatillas urbanas con diseño minimalista y versátil. Ideales para combinar con diferentes estilos de ropa.",
+        features: [
+            "Diseño minimalista",
+            "Materiales duraderos",
+            "Suela de goma resistente",
+            "Ajuste cómodo"
+        ],
+        sizes: ["35", "36", "37", "38", "39", "40"],
+        image: "img/44.jpeg"
+    },
+    { 
+        id: 45, 
+        name: "Ref: 41-45", 
+        price: "$150.000", 
+        category: ["casual", "hombre"],
+        description: "Zapatillas urbanas con diseño minimalista y versátil. Ideales para combinar con diferentes estilos de ropa.",
+        features: [
+            "Diseño minimalista",
+            "Materiales duraderos",
+            "Suela de goma resistente",
+            "Ajuste cómodo"
+        ],
+        sizes: ["35", "36", "37", "38", "39", "40"],
+        image: "img/45.jpeg"
+    },
+    { 
+        id: 46, 
+        name: "Ref: FRT-534-CG6-24-29", 
+        price: "$120.000", 
+        category: ["niños", "casual", "mujer"],
+        description: "Zapatillas deportivas para niños con diseño divertido y colores vibrantes. Ofrecen comodidad y soporte para actividades diarias.",
+        features: [
+            "Diseño infantil colorido",
+            "Materiales suaves y flexibles",
+            "Suela antideslizante",
+            "Cierre con velcro fácil de usar"
+        ],
+        sizes: ["24", "25", "26", "27", "28", "29"],
+        image: "img/46.jpeg"
+    },
+    { 
+        id: 47, 
+        name: "Ref: FRT-520-CB8-24-29", 
+        price: "$120.000", 
+        category: ["niños", "casual"],
+        description: "Zapatillas deportivas infantiles con tecnología de confort y diseño ergonómico para el desarrollo saludable de los pies.",
+        features: [
+            "Plantilla anatómica",
+            "Materiales transpirables",
+            "Suela flexible",
+            "Refuerzos en zonas de desgaste"
+        ],
+        sizes: ["24", "25", "26", "27", "28", "29"],
+        image: "img/47.jpeg"
+    },
+    { 
+        id: 48, 
+        name: "Ref: FRT-693-CG26-24-29", 
+        price: "$125.000", 
+        category: ["niños", "casual"],
+        description: "Zapatillas Liger para niños, ultra livianas y cómodas. Diseño colorido que gustará a los más pequeños.",
+        features: [
+            "Peso ultra ligero",
+            "Materiales suaves",
+            "Suela flexible",
+            "Diseño divertido"
+        ],
+        sizes: ["24", "25", "26", "27", "28", "29"],
+        image: "img/48.jpeg"
+    },
+    { 
+        id: 49, 
+        name: "Ref: FRT-669-CB14-24-29", 
+        price: "$120.000", 
+        category: ["niños", "casual", "hombre"],
+        description: "Zapatillas infantiles con tecnología de confort y soporte para el crecimiento saludable de los pies.",
+        features: [
+            "Soporte para arco plantar",
+            "Plantilla extraíble",
+            "Materiales duraderos",
+            "Cierre seguro"
+        ],
+        sizes: ["24", "25", "26", "27", "28", "29"],
+        image: "img/49.jpeg"
+    },
+    { 
+        id: 50, 
+        name: "Ref: FRT-667-CG13", 
+        price: "$115.000", 
+        category: ["niños", "casual"],
+        description: "Zapatillas casuales para niños con diseño moderno y colores atractivos. Perfectas para el uso escolar y diario.",
+        features: [
+            "Diseño escolar",
+            "Materiales fáciles de limpiar",
+            "Suela resistente",
+            "Ajuste cómodo"
+        ],
+        sizes: ["24", "25", "26", "27", "28", "29"],
+        image: "img/50.jpeg"
+    },
+    { 
+        id: 51, 
+        name: "Ref: FLEXRUN-35-40-624", 
+        price: "$180.000", 
+        category: ["urbano", "hombre", ""],
+        description: "Zapatillas FlexRun con tecnología de amortiguación para corredores. Ofrecen máxima flexibilidad y retorno de energía.",
+        features: [
+            "Tecnología FlexRun",
+            "Upper transpirable",
+            "Suela de alta tracción",
+            "Amortiguación reactiva"
+        ],
+        sizes: ["35", "36", "37", "38", "39", "40"],
+        image: "img/51.jpeg"
+    },
+    { 
+        id: 52, 
+        name: "Ref: FLEXRUN 35-40-624", 
+        price: "$180.000", 
+        category: ["deportivo", "hombre", "running"],
+        description: "Zapatillas de running con sistema de amortiguación avanzado para mayor comodidad en cada paso. Diseño aerodinámico.",
+        features: [
+            "Sistema de amortiguación avanzado",
+            "Materiales ligeros",
+            "Suela de desgaste prolongado",
+            "Soporte para arco plantar"
+        ],
+        sizes: ["35", "36", "37", "38", "39", "40"],
+        image: "img/52.jpeg"
+    },
+    { 
+        id: 53, 
+        name: "Ref: N15-25-29-156", 
+        price: "$110.000", 
+        category: ["niños", "casual"],
+        description: "Zapatillas infantiles con diseño clásico y cómodo, perfectas para el día a día de los más pequeños.",
+        features: [
+            "Diseño clásico infantil",
+            "Materiales suaves",
+            "Suela flexible",
+            "Fácil de poner y quitar"
+        ],
+        sizes: ["25", "26", "27", "28", "29"],
+        image: "img/53.jpeg"
+    },
+    { 
+        id: 54, 
+        name: "Ref: 35-40-624", 
+        price: "$170.000", 
+        category: ["deportivo", "hombre"],
+        description: "Zapatillas deportivas versátiles para entrenamiento y uso casual. Combinan estilo y funcionalidad deportiva.",
+        features: [
+            "Versátil para deporte y casual",
+            "Materiales transpirables",
+            "Suela multidireccional",
+            "Ajuste personalizable"
+        ],
+        sizes: ["35", "36", "37", "38", "39", "40"],
+        image: "img/54.jpeg"
+    },
+    { 
+        id: 55, 
+        name: "Ref: 35-40", 
+        price: "$170.000", 
+        category: ["casual", "hombre", "urbano"],
+        description: "Zapatillas deportivas versátiles para entrenamiento y uso casual. Combinan estilo y funcionalidad deportiva.",
+        features: [
+            "Versátil para deporte y casual",
+            "Materiales transpirables",
+            "Suela multidireccional",
+            "Ajuste personalizable"
+        ],
+        sizes: ["35", "36", "37", "38", "39", "40"],
+        image: "img/55.jpeg"
+    },
+    { 
+        id: 56, 
+        name: "Ref: YANEU X4 38-43", 
+        price: "$190.000", 
+        category: ["casual", "hombre", "urbano"],
+        description: "Zapatillas YANEU X4 con tecnología de alto rendimiento para deportistas exigentes. Diseño moderno y aerodinámico.",
+        features: [
+            "Tecnología X4 para máximo rendimiento",
+            "Upper en malla técnica",
+            "Sistema de amortiguación reactiva",
+            "Suela de tracción multidireccional"
+        ],
+        sizes: ["38", "39", "40", "41", "42", "43"],
+        image: "img/56.jpeg"
+    },
+    { 
+        id: 57, 
+        name: "Ref: YANBU X4 35-40", 
+        price: "$190.000", 
+        category: ["casual", "hombre", "urbano"],
+        description: "Zapatillas YANBU X4 diseñadas para entrenamiento de alta intensidad. Ofrecen estabilidad y soporte en cada movimiento.",
+        features: [
+            "Soporte para entrenamiento intenso",
+            "Materiales resistentes",
+            "Suela de alta durabilidad",
+            "Sistema de ajuste seguro"
+        ],
+        sizes: ["35", "36", "37", "38", "39", "40"],
+        image: "img/57.jpeg"
+    },
+    { 
+        id: 58, 
+        name: "Ref: YANBU X4 38-43", 
+        price: "$190.000", 
+        category: ["casual", "hombre"],
+        description: "Zapatillas YANBU X4 en color azul oscuro, diseñadas para alto rendimiento con tecnología de amortiguación avanzada y soporte para entrenamientos intensos.",
+        features: [
+            "Tecnología X4 de alto rendimiento",
+            "Amortiguación reactiva",
+            "Upper en malla transpirable",
+            "Suela de tracción multidireccional"
+        ],
+        sizes: ["38", "39", "40", "41", "42", "43"],
+        image: "img/58.jpeg"
+    },
+    { 
+        id: 59, 
+        name: "Ref: YANBU 35-40 Azul Oscuro", 
+        price: "$185.000", 
+        category: ["casual", "hombre"],
+        description: "Zapatillas YANBU en azul oscuro con diseño ergonómico para máxima comodidad. Ideales para entrenamiento y uso diario con estilo deportivo.",
+        features: [
+            "Color azul oscuro moderno",
+            "Plantilla Ortholite para confort",
+            "Suela de goma duradera",
+            "Ajuste seguro y cómodo"
+        ],
+        sizes: ["35", "36", "37", "38", "39", "40"],
+        image: "img/59.jpeg"
+    },
+    { 
+        id: 60, 
+        name: "Ref: MILESPONSIVER 35-40", 
+        price: "$200.000", 
+        category: ["deportivo", "hombre", "running"],
+        description: "Zapatillas Milésponsiver diseñadas para runners, con tecnología de absorción de impacto y máxima respirabilidad para largas distancias.",
+        features: [
+            "Tecnología de absorción de impacto",
+            "Upper ultra transpirable",
+            "Suela de alta durabilidad",
+            "Peso ligero para competencia"
+        ],
+        sizes: ["35", "36", "37", "38", "39", "40"],
+        image: "img/60.jpeg"
+    },
+    { 
+        id: 61, 
+        name: "Ref: D032-35-40-624", 
+        price: "$160.000", 
+        category: ["casual", "hombre"],
+        description: "Zapatillas urbanas con diseño moderno y versátil. Perfectas para combinar con jeans o ropa casual, ofreciendo comodidad durante todo el día.",
+        features: [
+            "Estilo urbano moderno",
+            "Plantilla acolchada",
+            "Suela flexible antideslizante",
+            "Materiales resistentes"
+        ],
+        sizes: ["35", "36", "37", "38", "39", "40"],
+        image: "img/61.jpeg"
+    },
+    { 
+        id: 62, 
+        name: "Ref: D025-35-40-672", 
+        price: "$165.000", 
+        category: ["casual", "hombre"],
+        description: "Zapatillas casuales con diseño contemporáneo y detalles premium. Ofrecen comodidad y estilo para el uso diario en la ciudad.",
+        features: [
+            "Diseño contemporáneo",
+            "Detalles en materiales premium",
+            "Suela de goma con patrón de tracción",
+            "Ajuste personalizable"
+        ],
+        sizes: ["35", "36", "37", "38", "39", "40"],
+        image: "img/62.jpeg"
+    }
 ];
-
+    
 let cart = [];
 const productsPerPage = 8;
 let currentPage = 1;
