@@ -821,7 +821,7 @@ const products = [
     { 
         id: 55, 
         name: "Ref: 35-40", 
-        price: "$33.000", 
+        price: "", 
         category: ["casual", "hombre", "urbano"],
         description: "Zapatillas deportivas versátiles para entrenamiento y uso casual. Combinan estilo y funcionalidad deportiva.",
         features: [
@@ -896,8 +896,8 @@ const products = [
     { 
         id: 60, 
         name: "Ref: 35-40", 
-        price: "", 
-        category: ["deportivo", "hombre", "running"],
+        price: "$33.000", 
+        category: ["casual", "hombre", ""],
         description: "Zapatillas Milésponsiver diseñadas para runners, con tecnología de absorción de impacto y máxima respirabilidad para largas distancias.",
         features: [
             "Tecnología de absorción de impacto",
@@ -956,7 +956,7 @@ const products = [
     { 
         id: 64, 
         name: "Ref: PW-101-36-41-96", 
-        price: "$", 
+        price: "", 
         category: ["casual", "mujer"],
         description: "Zapatillas casuales con diseño moderno y cómodo para el día a día.",
         features: [
@@ -971,7 +971,7 @@ const products = [
     { 
         id: 65, 
         name: "Ref: 195W-36-41-138", 
-        price: "$", 
+        price: "", 
         category: ["casual", "mujer"],
         description: "Zapatillas femeninas con estilo urbano y cómodo para uso diario.",
         features: [
@@ -986,7 +986,7 @@ const products = [
     { 
         id: 66, 
         name: "Ref: 200-40-45-400", 
-        price: "$", 
+        price: "", 
         category: ["deportivo", "hombre", "golfer"],
         description: "Zapatillas especializadas para golf con excelente tracción y estabilidad.",
         features: [
@@ -1001,7 +1001,7 @@ const products = [
     { 
         id: 67, 
         name: "Ref: 003-39-44-126", 
-        price: "$", 
+        price: "", 
         category: ["casual", "hombre"],
         description: "Zapatillas urbanas con diseño versátil para combinar con diferentes estilos.",
         features: [
@@ -1016,7 +1016,7 @@ const products = [
     { 
         id: 68, 
         name: "Ref: 173-39-44-144", 
-        price: "$", 
+        price: "", 
         category: ["deportivo", "hombre", "air-shoe"],
         description: "Zapatillas deportivas con tecnología Air-Shoe para mayor comodidad.",
         features: [
@@ -1031,7 +1031,7 @@ const products = [
     { 
         id: 69, 
         name: "Ref: 182-36-40", 
-        price: "$", 
+        price: "", 
         category: ["casual", "hombre", "lookingport"],
         description: "Zapatillas Lookingport con estilo urbano y cómodo para el día a día.",
         features: [
@@ -1046,7 +1046,7 @@ const products = [
     { 
         id: 70, 
         name: "Ref: 35-40-348", 
-        price: "$", 
+        price: "", 
         category: ["casual", "mujer"],
         description: "Zapatillas femeninas con diseño elegante y cómodo para uso diario.",
         features: [
@@ -1061,7 +1061,7 @@ const products = [
     { 
         id: 71, 
         name: "Ref: F-1135-40-45-168", 
-        price: "$", 
+        price: "", 
         category: ["casual", "hombre", "urbano"],
         description: "Zapatillas femeninas con diseño elegante y cómodo para uso diario.",
         features: [
@@ -1076,7 +1076,7 @@ const products = [
     { 
         id: 72, 
         name: "Ref: 200W-36-41-400", 
-        price: "$", 
+        price: "", 
         category: ["deportivo", "mujer", "golfer"],
         description: "Zapatillas de golf femeninas con excelente tracción y estabilidad.",
         features: [
@@ -1091,7 +1091,7 @@ const products = [
     { 
         id: 73, 
         name: "Ref: E-7199-36-41", 
-        price: "$", 
+        price: "", 
         category: ["casual", "mujer"],
         description: "Zapatillas femeninas con diseño moderno y cómodo para el día a día.",
         features: [
@@ -1106,7 +1106,7 @@ const products = [
     { 
         id: 74, 
         name: "Ref: AE-WLXD91884-21-26", 
-        price: "$", 
+        price: "", 
         category: ["niños", "anderson"],
         description: "Zapatillas infantiles Anderson con diseño divertido y cómodo para niños.",
         features: [
@@ -1121,7 +1121,7 @@ const products = [
     { 
         id: 75, 
         name: "Ref: AE-WLXD91884-21-26", 
-        price: "$", 
+        price: "", 
         category: ["niños", "anderson"],
         description: "Zapatillas infantiles Anderson con diseño colorido y cómodo para niños.",
         features: [
@@ -1136,7 +1136,7 @@ const products = [
     { 
         id: 76, 
         name: "Ref: XJ-903-36-41-252", 
-        price: "$", 
+        price: "", 
         category: ["casual", "mujer"],
         description: "Zapatillas femeninas con diseño elegante y cómodo para el día a día.",
         features: [
@@ -1151,7 +1151,7 @@ const products = [
     { 
         id: 77, 
         name: "Ref: XJ-908-36-41-252", 
-        price: "$", 
+        price: "", 
         category: ["casual", "mujer"],
         description: "Zapatillas femeninas con estilo moderno y versátil para diferentes ocasiones.",
         features: [
@@ -1166,7 +1166,7 @@ const products = [
     { 
         id: 78, 
         name: "Ref: 41-449D-37-41-288", 
-        price: "$", 
+        price: "", 
         category: ["casual", "mujer"],
         description: "Zapatillas femeninas con estilo moderno y versátil para diferentes ocasiones.",
         features: [
@@ -1181,7 +1181,7 @@ const products = [
     { 
         id: 79, 
         name: "Ref: HO27-38-43-756", 
-        price: "$", 
+        price: "", 
         category: ["running", "hombre", "deportivo"],
         description: "Zapatillas femeninas con estilo moderno y versátil para diferentes ocasiones.",
         features: [
@@ -1196,7 +1196,7 @@ const products = [
     { 
         id: 80, 
         name: "Ref: D035-35-40-648", 
-        price: "$", 
+        price: "", 
         category: ["casual", "hombre"],
         description: "Zapatillas urbanas con diseño minimalista y versátil para el día a día.",
         features: [
@@ -1211,7 +1211,7 @@ const products = [
     { 
         id: 81, 
         name: "Ref: E-7158-36-41-264", 
-        price: "$", 
+        price: "", 
         category: ["casual", "mujer"],
         description: "Zapatillas urbanas con diseño minimalista y versátil para el día a día.",
         features: [
@@ -1226,7 +1226,7 @@ const products = [
     { 
         id: 82, 
         name: "Ref: 047-4-39-44-168", 
-        price: "$", 
+        price: "", 
         category: ["casual", "hombre"],
         description: "Zapatillas urbanas con diseño moderno y cómodo para uso diario.",
         features: [
@@ -1241,7 +1241,7 @@ const products = [
     { 
         id: 83, 
         name: "Ref: 173W-36-40-340", 
-        price: "$", 
+        price: "", 
         category: ["casual", "mujer"],
         description: "Zapatillas femeninas con estilo urbano y cómodo para el día a día.",
         features: [
@@ -1256,7 +1256,7 @@ const products = [
     { 
         id: 84, 
         name: "Ref: 2036-24-29-84", 
-        price: "$", 
+        price: "", 
         category: ["niños", "casual"],
         description: "Zapatillas infantiles con diseño cómodo y divertido para el día a día.",
         features: [
@@ -1271,7 +1271,7 @@ const products = [
     { 
         id: 85, 
         name: "Ref: PYW1462-36-41-264", 
-        price: "$", 
+        price: "", 
         category: ["casual", "mujer"],
         description: "Zapatillas femeninas con estilo moderno y versátil para diferentes ocasiones.",
         features: [
@@ -1286,7 +1286,7 @@ const products = [
     { 
         id: 86, 
         name: "Ref: PYW145I-36-41-264", 
-        price: "$", 
+        price: "", 
         category: ["casual", "mujer", "lcdsert"],
         description: "Zapatillas LCDSERT con diseño femenino y cómodo para uso diario.",
         features: [
@@ -1301,7 +1301,7 @@ const products = [
     { 
         id: 87, 
         name: "Ref: FE-93546-36-41-192", 
-        price: "$", 
+        price: "", 
         category: ["casual", "mujer"],
         description: "Zapatillas femeninas con diseño elegante y cómodo para el día a día.",
         features: [
@@ -1316,7 +1316,7 @@ const products = [
     { 
         id: 88, 
         name: "Ref: FR0-316-L7-36-41-192", 
-        price: "$", 
+        price: "", 
         category: ["casual", "mujer"],
         description: "Zapatillas urbanas con diseño moderno y versátil para combinar con diferentes estilos.",
         features: [
@@ -1331,7 +1331,7 @@ const products = [
     { 
         id: 89, 
         name: "Ref: 123M-40-45-168", 
-        price: "$", 
+        price: "", 
         category: ["casual", "hombre"],
         description: "Zapatillas urbanas masculinas con estilo moderno y cómodo para el día a día.",
         features: [
@@ -1346,7 +1346,7 @@ const products = [
     { 
         id: 90, 
         name: "Ref: 111-M-39-44-138", 
-        price: "$", 
+        price: "", 
         category: ["deportivo", "hombre", "golf"],
         description: "Zapatillas de golf con tecnología especializada para mejor tracción y estabilidad.",
         features: [
@@ -1361,7 +1361,7 @@ const products = [
     { 
         id: 91, 
         name: "Ref: 1002, 1003, 1011", 
-        price: "$", 
+        price: "", 
         category: ["casual", "hombre", "urbano"],
         description: "Zapatillas deportivas Nikenier para entrenamiento y running con tecnología de amortiguación.",
         features: [
